@@ -1,0 +1,209 @@
+---
+layout: page
+title: Mathdoku Solver
+---
+
+<p>Mathdoku (a.k.a KenKen) puzzles are closely related to Sudoku puzzles, but provide an extra layer of entertainment in the form of math 'cages'. If you're currently unfamiliar with these puzzles, you can learn about them <a href="http://en.wikipedia.org/wiki/KenKen">here</a>.</p>
+
+<p>The <a href="https://itunes.apple.com/us/app/mathdoku-solver/id662155767?mt=8&ign-mpt=uo%3D2">Mathdoku Solver app</a> is intended to be used with puzzles you find anywhere - in newspapers, magazines, puzzle books, online, etc. It only takes a minute or two to transfer a 6x6 'paper' puzzle onto the app's grid, and from there you can use the app for 'hints' (by revealing individual squares of your choice) or as a step-by-step logical guide. Either way, it can help you figure out how to solve a puzzle without just giving you the answer. It is not designed for interactively 'playing' Mathdoku puzzles - there are plenty of other apps for that.</p>
+
+<p>This document is a guide to using sudoseng's Mathdoku Solver. Within the app, tips will appear in the message bar near the top of the screen depending on the actions you perform and the context you are in. These tips are designed to help you learn the app intuitively, but if you need more assistance then hopefully this guide will help.</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/tips.jpg" /></div>
+
+<h3>Contents</h3>
+
+<ul>
+  <li><a href="#section1">Entering and Editing Puzzles</a>
+    <ul>
+      <li><a href="#section2">Drawing Cages</a></li>
+      <li><a href="#section3">Editing Cage Rules</a></li>
+      <li><a href="#section4">Saving and Loading Puzzles</a></li>
+    </ul>
+  </li>
+  <li><a href="#section5">Exploring Puzzle Solutions</a>
+    <ul>
+      <li><a href="#section6">Starting the Solver</a></li>
+      <li><a href="#section7">Revealing the Solution</a></li>
+      <li><a href="#section8">Using the Walkthrough</a></li>
+      <li><a href="#section9">Interpreting the Small Numbers</a></li>
+      <li><a href="#section10">Understanding the Logical Explanations</a></li>
+      <li><a href="#section11">Walkthrough Summary</a></li>
+    </ul>
+  </li>
+</ul>
+
+<a name="section1"></a>
+<h1>Entering and Editing Puzzles</h1>
+
+<p><strong>Note: in the free version of the app, you are restricted to grid sizes up to 6x6. Larger grids are available in the full version.</strong></p>
+
+<a name="section2"></a>
+<h3>Drawing Cages</h3>
+
+<p>To draw in the cages of a new puzzle, first ensure that the tab along the bottom of the screen is set to the correct puzzle size (6x6 is the default) and that the 'Draw Cages' option is selected in the app's 'Edit' section. Then, simply tap and drag the cage shapes on the grid. Newly created cages will appear with '?' as the math rule.</p>
+
+<p>Drawing over any square belonging to an existing cage will cause the existing cage to be deleted. This means you don't have to remove cages to fix up an area of the grid that is incorrect; just draw the correct pattern of cages on top and anything incorrect will disappear from underneath. Also note that you can use the 'Undo' button in the 'Edit' section just as you would in any other program.</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/ipad_screenshot_1.jpg" /></div>
+
+<a name="section3"></a>
+<h3>Editing Cage Rules</h3>
+
+<p>When you're ready to start entering the rules for each cage, select the 'Edit Cage Math' option in the 'Edit' section. Now when you tap on the grid a popup resembling a calculator will appear, and the cage you touched will highlight green. Enter the cage's 'target' number using the number pad (just like a normal calculator). For the operator, there are five potential options, only one of which can be selected at a time: these are the four standard mathematical operators, and 'No-op' (no operator).</p>
+
+<p><strong>Note: 'No-op' puzzles (in which cage rules may have an 'unknown' operator that the player must discover for themselves) are not supported in the current version of this app. This means that the no-op selection is only available for 1x1 cages.</strong></p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/ipad_screenshot_2.jpg" /></div>
+
+<p>Once a cage rule is entered, tap the OK button (symbolised by a check/tick icon) to confirm it. Alternatively, you can tap directly on other cages to edit their rules; or you can use the left and right arrow buttons to cycle back and forth through the cages you have entered. This last method is often the quickest once you get used to it. Tapping the cancel button ('X') will ignore the cage rule you just entered and return to the grid.</p>
+
+<p>There is a slightly different way to enter puzzles which some users may prefer. Instead of separating the 'Draw Cage' and 'Edit Cage Math' phases as explained above, you can continue to hold your finger on a newly drawn cage (while its shape is still highlighted yellow) to bring up the rule entry popup immediately (i.e., a 'tap-drag-hold' motion). If you choose this method, the 'Edit' section will revert back to 'Draw Cages' after you are finished with the popup.</p>
+
+<a name="section4"></a>
+<h3>Saving and Loading Puzzles</h3>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/files.jpg" /></div>
+
+<p>If for whatever reason you want to save puzzles that you enter for future reference, you can. At any time during editing or exploring the solution you can tap the save button in the 'Files' section to do this. The app will bring up a text box containing an automatically generated file name that uses a simple numbering scheme - you can switch this to one of several automatic date naming schemes, or else clear the text box and call it anything you want. It just means you don't have to type if you don't feel like it ;). Tap 'Return' on the iPad keyboard to save.</p>
+
+<p>Tapping the load button will show a scrollable popup containing all the saved files in the app's local directory. There are 6 sample puzzles to test, perhaps if you want to get a feel for the app but don't yet have a puzzle of your own that needs solving. The samples are generated when you open the app for the first time. Tap on the name of a saved file to load that puzzle. If the puzzle is a different size to the grid you are currently viewing, it will load in the appropriate tab and take you straight there, without changing anything on the previous tab.</p>
+
+<p><strong>Note: if you have only the free version of the app, the load popup will show all puzzles larger than 6x6 as greyed out.</strong></p>
+
+<p>Tapping the delete button will remove the currently loaded file from the app's local folder, but it will not clear the grid. If you want to start fresh, tap on 'New Puzzle' in the 'Edit' section. If you want to delete all the puzzles located in the app's local folder, then tap and hold the delete button for a few seconds. You can't undo this action.</p>
+
+<a name="section5"></a>
+<h1>Exploring Puzzle Solutions</h1>
+
+<p>As soon as you have finished entering a puzzle (that means every grid square is contained in a cage, and all '?' rules have been attended to), the app will check for any really obvious errors that you might have entered accidentally; say for instance, a cage on a 6x6 puzzle that multiplies to give 7. Impossible cages will be highlighted red, and you must fix the errors in these before you can go any further. If there are no errors, then the app will let you know that the puzzle is 'ready to be solved' and it will make the 'Show', 'Tap-to-Reveal' and 'Walkthrough' buttons available for use.</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution.jpg" /></div>
+
+<p><strong>Note: cages that contain more than 6 squares will also show up as errors. This is because the current version of the app doesn't support large cages, which are rare and most often reserved for truly fiendish or 'novelty' puzzles. It is a technical shortcoming that may be improved upon in future updates if enough users are interested.</strong></p>
+
+<a name="section6"></a>
+<h3>Starting the Solver</h3>
+<p>'The Solver' is started the moment you tap one of the three buttons in the solution section that become available once the puzzle is determined to be 'valid'. Most puzzles will be solvable in a fraction of a second, and most puzzle walkthroughs will be generated in one or two seconds. But, <strong>even a 'valid' puzzle may have no solution</strong>. If this occurs, you will be notified that one or more cages need fixing, and you can return to editing by tapping the 'Revise Puzzle' button.</p>
+
+<p>For a puzzle to have no solution, it means there is a logical contradiction somewhere - in other words, one or more cages have rules that are 'in conflict' with the rules of other cages. These errors can't be picked up by the app before it starts the solver, because they usually become apparent in a different location on the grid to the cages that prove to be the culprits. Therefore, to correct such errors you will have to go over the original puzzle carefully to pin-point the mistakes you made during editing.</p>
+
+<a name="section7"></a>
+<h3>Revealing the Solution</h3>
+<p>Tapping the 'Show' button will reveal the entire solution on the grid. Tapping the 'Hide' button will hide the solution from view (although the puzzle will remain 'solved' behind the scenes until you elect to decide the puzzle or start/load a new one). Tapping the 'Tap-to-Reveal' button will keep the solution hidden at first, but allow you to unveil 'hints' square by square. Simply tap a grid square to reveal its number; tapping it again will hide it.</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/ipad_screenshot_3.jpg" /></div>
+
+<p>The squares you have elected to reveal as hints will be remembered if you change the solution mode to 'Show' or 'Hide', then back to 'Tap-to-Reveal'.</p>
+
+<a name="section8"></a>
+<h3>Using the Walkthrough</h3>
+
+<p><strong>Note: in the free version of the app, you can only use the walkthrough for 4x4 and 5x5 puzzles. In the full version you can use it for all puzzles up to 9x9.</strong></p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/wt_controls.jpg" /></div>
+
+<p>Tapping the 'Start Walkthrough' button will generate the walkthrough and take you to the very first step, beginning with the blank unsolved puzzle. For larger puzzles, the generation of the walkthrough can sometimes take a few seconds depending on the puzzle's difficulty.</p>
+
+<p>From the first step, you can use the walkthrough controls (shown above) to step forwards and backwards through the solution. The representation of each step will be aided using some colour-coding of sections of the grid (this is <a href="#section10">descibed below</a>). Each step also has a worded explanation that appears in the message bar. Some solutions are much longer than others - easy 4x4 puzzles sometimes have only a handful of steps, while difficult 9x9 puzzles can have hundreds. The slider located underneath the puzzle grid indicates how far through the solution you are. You can also tap-drag on it directly to move quickly through the steps and find a spot that roughly matches the progress you may have already made.</p>
+
+<a name="section9"></a>
+<h3>Interpreting the small numbers</h3>
+
+<div class="screenshot">
+  <img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/small_nums.jpg" />
+  <img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/small_nums_switch.jpg" />
+</div>
+
+<p>Part of most people's strategies when solving Sudoku or KenKen puzzles is to mark the potential candidates for each square or cage using little dots or numbers. For example, in a 4x4 puzzle like the one above, a two-square cage with the rule '6x' has exactly two possible solutions: [2 3] or [3 2], and it is common for the player to jot down small numbers to this effect. It makes logical steps further down the line easier to see. The app uses a rather similar technique, which is why turning the 'small numbers' switch on is usually helpful in order to understand the solution. (For easy puzzles, you may not find it necessary.)</p>
+
+<p>In fact, the solver and the app's walkthrough refer to multiple possible solutions for a cage (like what was described above) as 'options'. In a nutshell, the solver works by starting out with the 'complete' set of options for every cage; these options are then progressively whittled down as more and more information comes to light. Eventually every cage will have only one option left - a dead giveaway that the puzzle has been solved!</p>
+
+<p>The following sequence of walkthrough screenshots demonstrates this method taking place. Notice how the solver begins by assuming that every number is possible in every square, and then progresses using its knowledge of both the KenKen cage rules and the standard Sudoku rules. If a small number has become invisible, it means the number has been completely ruled out for that square.</p>
+
+<div class="screenshot">
+  <img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/small_num_1.jpg" />
+  <img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/small_num_2.jpg" />
+  <img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/small_num_3.jpg" />
+  <img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/small_num_4.jpg" />
+  <img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/small_num_5.jpg" />
+  <img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/small_num_6.jpg" />
+</div>
+
+<a name="section10"></a>
+<h3>Understanding the Logical Explanations</h3>
+
+<p>The logic required to solve hard KenKen puzzles can be fairly involved, and it must be emphasised that not every algorithm known to human solvers is utilised by the app during the solution process. On the other hand, a significant portion of puzzles require only a handful of different strategies. This section will not go into voluminous detail regarding KenKen/Sudoku strategy (in this regard you can get help elsewhere, such as <a href="http://www.kenken.com/howto/hard">here</a> or <a href="http://www.sudokuwiki.org/kenken6x6.asp">here</a>). Instead it will explain the principle behind the colour-coding scheme shown in the app's walkthrough steps, and describe a few examples of common scenarios. Hopefully this will give you the information you need to interpret any walkthrough step that comes up.</p>
+
+<p>A standard type of scenario for Mathdoku puzzles is shown below:</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution_step_1.jpg" /></div>
+
+<p>As in the image, green highlighting is almost always used to refer to one or more cages. In this case all the numbers for these cages can be confirmed simultaneously, because they each have only one possible combination of candidates. The following image shows exactly the same scenario but with candidate 'small numbers' enabled:</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution_step_2.jpg" /></div>
+
+<p>Note the bold font and red colouring of the candidates - these are in a 'flagged for deletion' state because the numbers that were just confirmed definitively rule them out. In the subsequent solution step they will become invisible.</p>
+
+<p>Mathdoku rules come into play in the next scenario. (It happens to be the solution step a couple before the one in the last scenario.) The red candidates for the highlighted cages can be ruled out because they no longer contribute to any combinations of math operations that can reach their targets.</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution_step_3.jpg" /></div>
+
+<p>Note that the very first step of every walkthrough is to apply this reasoning to every cage. This often looks more intimidating than it really is!</p>
+
+<p>Now, the simplest of Sudoku scenarios:</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution_step_4.jpg" /></div>
+
+<p>A blue highlight refers to the individual square in question, and indicates that its number has just been confirmed through some kind of logic. In this case, the number was confirmed because it was required to complete the column using the normal Sudoku rule.</p>
+
+<p>In the following scenario, a blue highlight is used again, but this time the square is able to be confirmed because there is only a single candidate left for the square. Without recording candidates as small numbers it would take a bit of thought to arrive at this conclusion, but with small numbers switched on it's obvious.</p>
+
+<div class="screenshot">
+  <img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution_step_5.jpg" />
+  <img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution_step_6.jpg" />
+</div>
+
+<p>Another common scenario that applies to Mathdoku puzzles is the process of elimination with respect to individual rows or columns. For example, in the following scenario the number could not go anywhere else in the column without breaking one of the math rules:</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution_step_7.jpg" /></div>
+
+<p>In this above scenario, the blue highlighting again refers to the square that can be confirmed, while the yellow highlighting applies to all the squares that are involved in the 'cause'; that is, the successful process of elimination.</p>
+
+<p>In more challenging puzzles, most of the logical manoeuvres serve to eliminate candidates in the lead-up to confirming numbers. A very common piece of Mathdoku logic is seen in the next example:</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution_step_8.jpg" /></div>
+
+<p>In the above example, the highlighted cage is single-handedly involved in ruling out something in the rest of the column that is highlighted yellow (in other words, yellow is indicating 'effect'). In this type of scenario, the candidate small numbers that enable this elimination are emboldened and coloured blue, while the candidates that are being ruled out turn red as usual.</p>
+
+<p>The next scenario is occasionally found in medium-to-hard puzzles - in this example, the number 5 must appear twice in a specific 2x2 block, and therefore some other candidate 5's can be ruled out. Here the yellow highlighting is used to indicate the 'effect' as in the previous example, and the blue highlighting refers to squares that take centre-stage in this step (the 2x2 block in question). In this case, green highlighting is used to illuminate the 'cause' in order to distinguish it from the effect, which occurs elsewhere. As before, the blue candidate numbers are involved in ruling out the red ones.</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution_step_9.jpg" /></div>
+
+<p>If a puzzle is impossible - that is, it contains a logical contradiction - then at some point the solver will get stuck. Generally these problems become obvious when a number is confirmed twice in a single row or column, when a square has all of its candidates eliminated to no avail, or when a cage can no longer adhere to its math rule. Red square highlighting is used to indicate the cage or square where the problem becomes apparent.</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution_step_10.jpg" /></div>
+
+<p><strong>Note: for this kind of puzzle where there is no possible solution, the 'Show' and 'Tap-to-Reveal' buttons will not do anything for you. However, you can still use the walkthrough to trace the steps up to the point where evidence of the error was discovered.</strong></p>
+
+<p>Some puzzles are constructed so that a sort of 'leap of faith' is required at some point. In other words, there are no more 'pure' logical steps that can be used, and the player must make a tentative guess that either leads to a contradiction or to the solution.</p>
+
+<div class="screenshot"><img src="https://googledrive.com/host/0B_z8ucwA-rNvaC14NkVxMExzS3M/solution_step_11.jpg" /></div>
+
+<p>This is known in the app as 'speculation' mode (in other words, trial and error!). When in this mode, any confirmed numbers or eliminated candidates will be considered 'tentative', and coloured grey. If the speculation leads to a contradiction (like in the impossible puzzles mentioned in the previous example), then the solver will reverse its decisions all the way back to where it made the guess and resume from there. In most cases a series of one or more contradictions will allow the solver to eliminate some candidates in the cage in which it made the guess, to the point where the use of 'pure' logic can be resumed.</p>
+
+<a name="section11"></a>
+<h3>To summarise:</h3>
+
+<p><ul>
+  <li>Blue square highlighting refers to squares in question;</li>
+  <li>Yellow square highlighting refers to squares that are involved in the 'cause' or 'effect' of something;</li>
+  <li>Green square highlighting refers to any cages in question, or less commonly to the 'cause' of something where the cause and effect are perpendicular;</li>
+  <li>Red square highlighting refers to squares or cages in which a logical contradiction has manifested;</li>
+  <li>Red small number colouring indicates candidates that are being ruled out;</li>
+  <li>Blue small number colouring indicates candidates that play some role in ruling out others;</li>
+  <li>Grey colouring indicates candidates that have been 'tentatively' ruled out, or numbers that have been tentatively confirmed during a speculative chain of reasoning.</li>
+</ul></p>
+
+<h3>That's it!</h3>
+<p>We hope you get something out of this app, and that it helps you improve your number-based logic puzzle-solving skills. Please feel free to email <a href="mailto:support@sudoseng.com">support@sudoseng.com</a> for any further questions or concerns you might have.</p>

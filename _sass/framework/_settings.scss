@@ -1,0 +1,49 @@
+// Bootstrap override
+$brand-primary: #3498DB;
+$brand-secondary: #E74C3C;
+$brand-success: #dff0d8;
+$brand-info: #d9edf7;
+$brand-warning: #fcf8e3;
+$brand-problem: #f2dede;
+$brand-dark: #333;
+
+
+// Bootstrap overrides
+$border-radius-base: 3px;
+$border-radius-large: 4px;
+$border-radius-small: 2px;
+
+$font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: "Raleway", Georgia, "Times New Roman", Times, serif;
+
+$body-bg: #fff;
+$text-color: #777;
+
+$input-border: #ddd;
+$input-border-radius: 0px;
+$line-height-base: 1.5;
+
+
+// Media queries breakpoints
+$media : screen;
+$feature : min-width;
+$feature-alt : max-width;
+
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+
+// Background
+$background-color: #f9f9f9;
+$background-image: url('../images/background/pw_pattern.png');
+
+
+// Loader
+$loader-image: url('../images/loader.gif');
+$loader-padding: 20px;
+$loader-size: 64px;
+
+$tagline-background: $brand-primary;
+

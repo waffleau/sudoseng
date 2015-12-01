@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="headline">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="headline__mantra">
+          <span class="quote line-1">We make apps</span><br />
+          <span class="quote line-2">that we want</span><br />
+          <span class="quote line-3">and give them to</span><br />
+          <span class="quote line-4">YOU</span>
+        </div>
+      </div>
+
+      <div class="col-sm-4 hidden-sm hidden-xs">
+        <div class="headline__about">
+          <h2>We like to make:</h2>
+          <ul>
+            <li>Helpful apps</li>
+            <li>Modern websites</li>
+            <li>Creative games</li>
+            <li>And catchy music!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="landing-heading">Some of our most recent work...</h2>
+
+  <div class="project-container">
+    <sudo-project ng-repeat="project in projects track by project.id"></sudo-project>
+  </div>
+</div>

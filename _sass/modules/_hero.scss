@@ -1,0 +1,86 @@
+// ====================================================
+// Local variables
+// ====================================================
+
+$headline-color: #111;
+$headline-height: 400px;
+$headline-height-compact: 300px;
+$headline-image: url('../images/background/dark_mosaic.png');
+$headline-position: center center;
+$headline-repeat: repeat;
+$headline-size: auto;
+
+
+// ====================================================
+// Styles
+// ====================================================
+
+
+.headline {
+  background-color: $headline-color;
+  background-image: $headline-image;
+  background-repeat: $headline-repeat;
+  background-position: $headline-position;
+  background-size: $headline-size;
+  color: white;
+  padding: 30px;
+
+  @include respond-to($screen-md) { height: $headline-height; }
+  @include respond-to-max($screen-md) { height: $headline-height-compact; }
+}
+
+.headline__mantra {
+  display: block;
+
+  @include respond-to($screen-md) {
+    margin-left: 150px;
+  }
+
+  .quote {
+    background: $brand-primary;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+
+    @include respond-to($screen-md) {
+      font-size: 2.5em;
+      padding: 0 20px;
+
+      &.line-1 { margin: 10px 0 0 0px; }
+      &.line-2 { margin: 20px 0 0 60px; }
+      &.line-3 { margin: 60px 0 0 20px; }
+      &.line-4 {
+        font-size: 3.4em;
+        margin: 20px 0 0 160px;
+      }
+    }
+
+    @include respond-to-max($screen-md) {
+      font-size: 2em;
+      padding: 0 10px;
+
+      &.line-1 { margin: 10px 0 0 0px; }
+      &.line-2 { margin: 10px 0 0 40px; }
+      &.line-3 { margin: 30px 0 0 20px; }
+      &.line-4 {
+        font-size: 2.6em;
+        margin: 10px 0 0 100px;
+      }
+    }
+  }
+}
+
+.headline__about {
+  display: block;
+  margin-top: 50px;
+
+  ul li {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+}
+
+.landing-heading {
+  margin: 50px 0;
+  text-align: center;
+}

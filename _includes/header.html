@@ -1,0 +1,26 @@
+<header class="header">
+  <div class="container">
+
+    <div class="col-sm-4 col-xs-10">
+      <a href="/" class="logo"></a>
+    </div>
+
+    <div class="col-sm-8 text-right">
+      <nav class="menu">
+
+        <ul>
+          {% for nav in site.pages %}
+            {% assign current_url = page.url|remove:'index.html' %}
+            {% if nav.title %}
+              <li {% if current_url == nav.url %}class="active"{% endif %}>
+                <a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+      </nav>
+    </div>
+
+  </div>
+</header>

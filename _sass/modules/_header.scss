@@ -1,0 +1,32 @@
+// ====================================================
+// Local variables
+// ====================================================
+
+$header-height: 180px;
+
+$logo-image: url('../images/logo.png');
+
+
+// ====================================================
+// Styles
+// ====================================================
+
+.header {
+  display: block;
+  height: $header-height;
+  position: relative;
+}
+
+.logo {
+  background: $logo-image;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  display: inline-block;
+  height: $header-height;
+  min-width: 250px;
+  max-width: 400px;
+  text-align: left;
+  width: 100%;
+}
+

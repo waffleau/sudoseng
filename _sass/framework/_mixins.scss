@@ -1,0 +1,28 @@
+//
+// Mixins
+// --------------------------------------------------
+
+
+// ******************** //
+//      RESPOND TO      //
+// ******************** //
+// Use: @include respond-to(screen-xs) { }
+
+@mixin respond-to($breakpoint) {
+  @media only #{$media} and ($feature: #{$breakpoint}) { @content }
+}
+
+@mixin respond-to-max($breakpoint) {
+  @media only #{$media} and ($feature-alt: #{$breakpoint}) { @content }
+}
+
+
+
+// ******************** //
+//      MATERIAL        //
+// ******************** //
+@mixin material-shadow($layer) {
+  box-shadow: 1px 1px (1px * $layer) (1px * $layer) rgba(0, 0, 0, 0.1 + (0.1 * $layer));
+  -moz-box-shadow: 1px 1px (2px * $layer) (1px * $layer) rgba(0, 0, 0, 0.1 + (0.1 * $layer));
+  -webkit-box-shadow: 1px 1px (2px * $layer) (1px * $layer) rgba(0, 0, 0, 0.1 + (0.1 * $layer));
+}

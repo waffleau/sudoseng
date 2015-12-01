@@ -1,0 +1,40 @@
+// ====================================================
+// Local variables
+// ====================================================
+
+$footer-background: $brand-primary;
+$footer-color: white;
+
+
+// ====================================================
+// Styles
+// ====================================================
+
+.footer {
+  background: $footer-background;
+  color: $footer-color;
+  margin-top: 80px;
+  padding: 40px;
+  text-align: center;
+
+  a {
+    color: $footer-color;
+    text-decoration: underline;
+  }
+}
+
+.mailing-list {
+  color: white;
+  margin: 0 auto 40px auto;
+  max-width: 300px;
+  text-align: center;
+
+  .form-control {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .btn-primary {
+    background-color: darken($brand-primary, 5%);
+  }
+}

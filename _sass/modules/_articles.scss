@@ -1,0 +1,62 @@
+// ====================================================
+// Local variables
+// ====================================================
+
+$article-background: none;
+$article-border: 1px solid #ddd;
+$article-margin: 0 0 60px 0;
+$article-padding: 15px 20px;
+
+$article-header-background: none;
+$article-header-border: 0;
+$article-header-color: $text-color;
+$article-header-font-size: 1.9em;
+
+$article-body-background: #fff;
+
+
+// ====================================================
+// Styles
+// ====================================================
+
+.article {
+  background: $article-background;
+  display: block;
+  margin: $article-margin;
+  position: relative;
+}
+
+.article__header {
+  background: $article-header-background;
+  color: $article-header-color;
+  display: block;
+  font-size: $article-header-font-size;
+  padding: 10px 20px;
+  margin: 0;
+  text-align: left;
+
+  a { color: $article-header-color; }
+}
+
+.article__byline {
+  background: $article-header-background;
+  color: $article-header-color;
+  display: block;
+  margin: 15px 0 0 0;
+  text-align: right;
+}
+
+.article__byline--small {
+  padding-left: 20px;
+}
+
+.article__body {
+  background: $article-body-background;
+  border: $article-border;
+  display: block;
+  margin: 0;
+  padding: $article-padding;
+  text-align: justify;
+
+  :last-child { margin-bottom: 0; }
+}

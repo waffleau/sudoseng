@@ -1,0 +1,36 @@
+// ====================================================
+// Local variables
+// ====================================================
+
+$page-background: rgba(#fff, .9);
+$page-border-radius: 0;
+$page-margin: 0;
+$page-padding: 30px;
+
+
+// ====================================================
+// Styles
+// ====================================================
+
+.page-wrap {
+  display: block;
+}
+
+.page {}
+
+.page__heading {
+  text-align: center;
+}
+
+.page__content {
+  background: $page-background;
+  border-radius: $page-border-radius;
+  display: block;
+  margin: $page-margin;
+  padding: $page-padding;
+  position: relative;
+  text-align: left;
+
+  img { max-width: 100%; }
+  :last-child { margin-bottom: 0; }
+}

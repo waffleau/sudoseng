@@ -1,0 +1,83 @@
+// ====================================================
+// Local variables
+// ====================================================
+
+$menu-background: none;
+$menu-background-hover: none;
+$menu-border-color: none;
+$menu-border-width: 0;
+$menu-color: #999;
+$menu-color-active: $brand-secondary;
+$menu-color-hover: $brand-secondary;
+$menu-font-size: 1.4em;
+$menu-height: $header-height;
+$menu-item-padding: 60px;
+$menu-padding: 10px;
+
+
+// ====================================================
+// Styles
+// ====================================================
+
+.menu {
+  background: $menu-background;
+  display: inline-block;
+  height: $menu-height;
+  width: 100%;
+
+  ul {
+    display: inline-block;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    li {
+      float: left;
+      font-size: $menu-font-size;
+      font-weight: 500;
+      height: 100%;
+      list-style: none;
+      margin: 0;
+      padding: $menu-item-padding 0;
+
+      a:link, a:visited, a:active {
+        color: $menu-color;
+        display: block;
+        height: 100%;
+        line-height: $menu-height - $menu-item-padding * 2;
+        padding: 0px 20px;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+          background: $menu-background-hover;
+          color: $menu-color-hover;
+        }
+      }
+
+      &.active a {
+        border-bottom: 5px solid $menu-color-active;
+        color: $menu-color-active;
+      }
+    }
+  }
+}
+
+.menu-collapsed {
+  .menu-icon {
+    color: $menu-color;
+    display: block;
+    line-height: $menu-height;
+    margin: 15px 20px 0 0;
+    width: 100%;
+
+    &:hover { color: $menu-color-hover; }
+  }
+
+  ul {
+    margin-top: -$menu-height * 0.4;
+
+    a { font-size: 1.4em; }
+    li { text-transform: capitalize; }
+  }
+}

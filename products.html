@@ -1,0 +1,39 @@
+---
+layout: default
+title: Products
+permalink: /products/
+---
+<div class="container products">
+
+  {% for product in site.products %}
+
+    <div class="row project">
+      <div class="col-sm-5 project__image">
+        <img src="{{ product.cover_image }}" />
+      </div>
+
+      <div class="col-sm-7 project__details">
+        <h3 class="project__heading">{{ product.name }}</h3>
+
+        <div class="project__body">
+          <div>{{ product.content }}</div>
+
+          {% if product.guide_url %}
+            <p class="project__read-more">
+              <a href="{{ product.guide_url }}">Read more about this product.</a>
+            </p>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="project__footer">
+        <p class="project-urls">
+          <em>Get it for:</em>&nbsp;&nbsp;
+          <a target="_self" href="{{ product.apple_url }}">iPhone</a>
+        </p>
+      </div>
+    </div>
+
+  {% endfor %}
+
+</div>
