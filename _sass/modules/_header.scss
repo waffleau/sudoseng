@@ -15,6 +15,7 @@ $logo-image: url('../images/logo.png');
   display: block;
   float: left;
   position: relative;
+  width: 100%;
 
   @include respond-to($screen-md) {
     height: $header-height;
