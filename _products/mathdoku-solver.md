@@ -2,7 +2,7 @@
 name:  Mathdoku Solver
 date: 2015-12-01 19:23:13 +1100
 guide_url: /guides/mathdoku-solver.html
-cover_image: http://res.cloudinary.com/sudoseng/image/upload/v1415076553/projects/mathdoku_solver.png
+cover_image: /images/projects/mathdoku_solver.png
 apple_url: https://itunes.apple.com/us/app/mathdoku-solver/id662155767?mt=8
 ---
 

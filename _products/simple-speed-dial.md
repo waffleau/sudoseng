@@ -1,7 +1,7 @@
 ---
 name: Simple Speed Dial
 date: 2015-12-01 19:23:13 +1100
-cover_image: http://res.cloudinary.com/sudoseng/image/upload/v1415076566/projects/simple_speed_dial.png
+cover_image: /images/projects/simple_speed_dial.png
 chrome_url: https://chrome.google.com/webstore/detail/simple-speed-dial/gpdpldlbafdmhlmcdllcjgoigmpjonfc
 ---
 

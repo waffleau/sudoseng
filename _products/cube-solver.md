@@ -1,7 +1,7 @@
 ---
 name:  Cube Solver
 date: 2015-12-01 19:23:13 +1100
-cover_image: http://res.cloudinary.com/sudoseng/image/upload/v1415076565/projects/cube_solver.png
+cover_image: /images/projects/cube_solver.png
 apple_url: https://itunes.apple.com/us/app/cube-solver/id788947506?mt=8
 ---
 
