@@ -104,7 +104,7 @@ $project-heading-z-index: 10;
 .project__footer {
   bottom: 0;
   position: absolute;
-  padding: 10px 20px;
+  padding: 20px;
   right: 0;
 }
 
@@ -157,6 +157,7 @@ $project-heading-z-index: 10;
   color: black;
   display: inline-block;
   font-size: 1.1em;
+  margin-left: 10px;
   padding: 10px;
 
   &:hover {

@@ -13,8 +13,12 @@ $logo-image: url('../images/logo.png');
 
 .header {
   display: block;
-  height: $header-height;
+  float: left;
   position: relative;
+
+  @include respond-to($screen-md) {
+    height: $header-height;
+  }
 }
 
 .logo {
@@ -23,10 +27,14 @@ $logo-image: url('../images/logo.png');
   background-position: center center;
   background-size: 100% auto;
   display: inline-block;
-  height: $header-height;
+  height: 140px;
   min-width: 250px;
   max-width: 400px;
   text-align: left;
   width: 100%;
+
+  @include respond-to($screen-md) {
+    height: $header-height;
+  }
 }
 

@@ -19,65 +19,57 @@ $menu-padding: 10px;
 // Styles
 // ====================================================
 
-.menu {
+.nav-primary {
   background: $menu-background;
-  display: inline-block;
-  height: $menu-height;
+  display: block;
   width: 100%;
 
-  ul {
-    display: inline-block;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0;
-
-    li {
-      float: left;
-      font-size: $menu-font-size;
-      font-weight: 500;
-      height: 100%;
-      list-style: none;
-      margin: 0;
-      padding: $menu-item-padding 0;
-
-      a:link, a:visited, a:active {
-        color: $menu-color;
-        display: block;
-        height: 100%;
-        line-height: $menu-height - $menu-item-padding * 2;
-        padding: 0px 20px;
-        text-align: center;
-        text-decoration: none;
-
-        &:hover {
-          background: $menu-background-hover;
-          color: $menu-color-hover;
-        }
-      }
-
-      &.active a {
-        border-bottom: 5px solid $menu-color-active;
-        color: $menu-color-active;
-      }
-    }
+  @include respond-to($screen-md) {
+    height: $menu-height;
   }
 }
 
-.menu-collapsed {
-  .menu-icon {
-    color: $menu-color;
-    display: block;
-    line-height: $menu-height;
-    margin: 15px 20px 0 0;
-    width: 100%;
+.menu {
+  display: inline-block;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
 
-    &:hover { color: $menu-color-hover; }
-  }
+  li {
+    display: inline-block;
+    font-size: $menu-font-size;
+    font-weight: 500;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 10px 0;
 
-  ul {
-    margin-top: -$menu-height * 0.4;
+    @include respond-to($screen-md) {
+      padding: $menu-item-padding 0;
+    }
 
-    a { font-size: 1.4em; }
-    li { text-transform: capitalize; }
+    a:link, a:visited, a:active {
+      color: $menu-color;
+      display: block;
+      height: 100%;
+      padding: 0px 20px;
+      text-align: center;
+      text-decoration: none;
+      transition: border .3s, color .3s;
+
+      @include respond-to($screen-md) {
+        line-height: $menu-height - $menu-item-padding * 2;
+      }
+
+      &:hover {
+        background: $menu-background-hover;
+        color: $menu-color-hover;
+      }
+    }
+
+    &.active a {
+      border-bottom: 5px solid $menu-color-active;
+      color: $menu-color-active;
+    }
   }
 }

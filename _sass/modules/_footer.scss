@@ -13,9 +13,12 @@ $footer-color: white;
 .footer {
   background: $footer-background;
   color: $footer-color;
-  margin-top: 80px;
+  display: block;
+  float: left;
+  margin-top: 40px;
   padding: 40px;
   text-align: center;
+  width: 100%;
 
   a {
     color: $footer-color;
