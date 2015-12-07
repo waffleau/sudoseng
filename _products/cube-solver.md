@@ -2,7 +2,8 @@
 name:  Cube Solver
 date: 2015-12-01 19:23:13 +1100
 cover_image: /images/projects/cube_solver.png
-apple_url: https://itunes.apple.com/us/app/cube-solver/id788947506?mt=8
+download_url: https://itunes.apple.com/us/app/cube-solver/id788947506?mt=8
+target_device: iPad
 ---
 
 Are you stuck on your cube? Can't figure out the next move? If so, Cube Solver might be just what you need!

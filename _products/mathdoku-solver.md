@@ -3,7 +3,8 @@ name:  Mathdoku Solver
 date: 2015-12-01 19:23:13 +1100
 guide_url: /guides/mathdoku-solver.html
 cover_image: /images/projects/mathdoku_solver.png
-apple_url: https://itunes.apple.com/us/app/mathdoku-solver/id662155767?mt=8
+download_url: https://itunes.apple.com/us/app/mathdoku-solver/id662155767?mt=8
+target_device: iPad 
 ---
 
 Mathdoku (a.k.a KenKen) puzzles are closely related to Sudoku puzzles, but provide an extra layer of entertainment
