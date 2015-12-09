@@ -37,14 +37,6 @@ $project-heading-z-index: 10;
   max-width: $project-max-width;
   padding: 0px;
   position: relative;
-
-  &:hover {
-    .project__image img {
-      filter: none;
-      -webkit-filter: grayscale(0);
-    }
-  }
-
 }
 
 .project__image {
@@ -56,10 +48,6 @@ $project-heading-z-index: 10;
     display: block;
     height: 100%;
     width: 100%;
-
-    filter: image-url('filters/filters.svg#grayscale'); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   }
 }
 
