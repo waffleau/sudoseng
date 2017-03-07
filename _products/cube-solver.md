@@ -6,7 +6,7 @@ download_url: https://itunes.apple.com/us/app/cube-solver/id788947506?mt=8
 target_device: iPad
 ---
 
-Are you stuck on your cube? Can't figure out the next move? If so, Cube Solver might be just what you need!
+Are you stuck on your cube? If so, Cube Solver might be just what you need!
 
 Cube Solver can give you step-by-step instructions on how to solve your cube, and figure out just how to tackle
 those tricky arrangements. There's also a library of pretty patterns to explore, for those who need a cube to
