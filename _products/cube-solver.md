@@ -16,4 +16,4 @@ match their personality.
 
 **Privacy Policy**
 
-The Cube Solver app does not collect, store or transmit any personal or analytic data. It doesn't generate any user data or preferences, or use your Internet connection. It also does not use any third-party libraries or software components, and it does not interact with any peripherals or iOS services. It continues to exist in a happy little bubble of its own while the rest of the world marches on.
+The Cube Solver app does not generate, collect, store or transmit any personal or analytic data. It doesn't store any preferences, or use your Internet connection. It also does not use any third-party libraries or software components, and it does not interact with any peripherals or other iOS services. It continues to exist in a happy little bubble of its own while the rest of the world marches on.
