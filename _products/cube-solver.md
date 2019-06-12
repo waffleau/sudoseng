@@ -12,6 +12,7 @@ Cube Solver can give you step-by-step instructions on how to solve your cube, an
 those tricky arrangements. There's also a library of pretty patterns to explore, for those who need a cube to
 match their personality.
 
-#### Privacy Policy
+
+**Privacy Policy**
 
 The Cube Solver app does not collect, store or transmit any personal or analytic data. It doesn't save any data or preferences, or use your Internet connection. It also does not use any 3rd party libraries, and it does not interact with any other peripherals or iOS services. It continues to exist in a little bubble of its own, while the rest of the world marches on.
