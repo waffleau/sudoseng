@@ -2,30 +2,29 @@
 layout: default
 title: Projects
 permalink: /projects/
-menu: true
+menu: false
 ---
-<div class="container projects">
 
+<div class="container projects">
   {% for project in site.projects %}
 
-    <div class="row project">
-      <div class="col-sm-5 project__image">
-        <img src="{{ project.cover_image }}" />
-      </div>
-
-      <div class="col-sm-7 project__details">
-        <div class="ribbon">
-          <span class="ribbon-text">Coming soon!</span>
-        </div>
-
-        <h3 class="project__heading">{{ project.name }}</h3>
-
-        <div class="project__body">
-          <div>{{ project.content }}</div>
-        </div>
-      </div>
+  <div class="row project">
+    <div class="col-sm-5 project__image">
+      <img src="{{ project.cover_image }}" />
     </div>
 
-  {% endfor %}
+    <div class="col-sm-7 project__details">
+      <div class="ribbon">
+        <span class="ribbon-text">Coming soon!</span>
+      </div>
 
+      <h3 class="project__heading">{{ project.name }}</h3>
+
+      <div class="project__body">
+        <div>{{ project.content }}</div>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
 </div>

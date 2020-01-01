@@ -2,64 +2,40 @@
 layout: default
 ---
 
-<div class="headline">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8">
-        <div class="headline__mantra">
-          <span class="quote line-1">We make apps</span><br />
-          <span class="quote line-2">that we want</span><br />
-          <span class="quote line-3">and give them to</span><br />
-          <span class="quote line-4">YOU</span>
-        </div>
-      </div>
-
-      <div class="col-sm-4 hidden-sm hidden-xs">
-        <div class="headline__about">
-          <h2>We like to make:</h2>
-          <ul>
-            <li>Helpful apps</li>
-            <li>Modern websites</li>
-            <li>Creative games</li>
-            <li>And catchy music!</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="container products">
-  <h2 class="landing-heading">Some of our most recent work...</h2>
-
   {% for product in site.products %}
 
-    <div class="row project">
-      <div class="col-sm-5 project__image">
-        <img src="{{ product.cover_image }}" />
-      </div>
+  <div class="row project">
+    <div class="col-sm-5 project__image">
+      <img src="{{ product.cover_image }}" />
+    </div>
 
-      <div class="col-sm-7 project__details">
-        <h3 class="project__heading">{{ product.name }}</h3>
+    <div class="col-sm-7 project__details">
+      <h3 class="project__heading">{{ product.name }}</h3>
 
-        <div class="project__body">
-          <div>{{ product.content }}</div>
+      <div class="project__body">
+        <div>{{ product.content }}</div>
 
-          {% if product.guide_url %}
-            <p class="project__read-more">
-              <a href="{{ product.guide_url }}">Read more about this product.</a>
-            </p>
-          {% endif %}
-        </div>
-      </div>
-
-      <div class="project__footer">
-        <p class="project-urls">
-          <em>Get it for:</em>
-          <a class="download-link" target="_self" href="{{ product.download_url }}">{{ product.target_device }}</a>
+        {% if product.guide_url %}
+        <p class="project__read-more">
+          <a href="{{ product.guide_url }}">Read more about this product.</a>
         </p>
+        {% endif %}
       </div>
     </div>
+
+    <div class="project__footer">
+      <p class="project-urls">
+        <em>Get it for:</em>
+        <a
+          class="download-link"
+          target="_self"
+          href="{{ product.download_url }}"
+          >{{ product.target_device }}</a
+        >
+      </p>
+    </div>
+  </div>
 
   {% endfor %}
 </div>
